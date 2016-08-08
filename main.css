@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+
+#query {
+  width: 100%;
+}
+
+.contain {
+  position: fixed; /* or absolute */
+  top: 42%;
+  left: 25%;
+  width: 50%;
+}
+
+#search {
+  margin-top: 10px;
+}
+
+#randomSearch {
+  margin-bottom: 10px;
+}
+
+li {
+
+}
