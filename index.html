@@ -5,17 +5,23 @@
     <title>Wiki Search</title>
     <link rel="stylesheet" href="bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="contain">
-      <a id="randomSearch" href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-info">Random Search</a>
-      <input placeholder="Search Criteria" id="query"></input>
-      <br>
+      <div class="link">
+        <a href="https://en.wikipedia.org/wiki/Special:Random">
+          <button id="randomSearch" class="btn btn-info" type="button" name="button">Random</button>
+        </a>
+      </div>
+      <input class="form-control" placeholder="Search Criteria" id="query"></input>
       <button class="btn btn-primary" id="search" type="button" name="button">Search</button>
     </div>
     <div >
       <ul id="wikiList">
+        <div id="reSearch" class="hidden">
 
+        </div>
       </ul>
     </div>
 
