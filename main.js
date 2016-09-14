@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   $('#search').click(function () {
     var query = $('#query').val();
+    $('#wikiList').removeClass('hidden');
     var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search="+ query +"&format=json&callback=?";
 
     if(query !== ""){
@@ -22,5 +23,7 @@ $( document ).ready(function() {
   $('#reSearch').click(function () {
     $('.contain').removeClass('hidden');
     $('#reSearch').addClass('hidden');
+    $('#wikiList').addClass('hidden');
+    $('#wikiList').empty();
   });
 });
