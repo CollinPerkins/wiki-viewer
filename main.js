@@ -19,4 +19,8 @@ $( document ).ready(function() {
       });
     }
   });
+  $('#reSearch').click(function () {
+    $('.contain').removeClass('hidden');
+    $('#reSearch').addClass('hidden');
+  });
 });
